@@ -1,0 +1,43 @@
+{
+  "name": "Spotify Controls",
+  "version": "0.0.0.1",
+  "description": "Extension to control Spotify player on Extension tab",
+  "permissions": ["storage", "tabs"],
+  "minimum_chrome_version": "55",
+  "content_scripts": [
+	   {
+		 "matches": ["https://open.spotify.com/*"],
+		 "js": ["contentScript.js"]
+	   }
+  ],
+  "commands": {
+      "spotify-pause-key": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+2"
+        },
+        "description": "Spotify stop command",
+        "global": true
+      },
+      "spotify-resume-key": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+3"
+        },
+        "description": "Spotify resume command",
+        "global": true
+      }
+  },
+  "browser_action": {
+	  "default_icon": {                   
+		  "16": "images/silence16.png",
+		  "32": "images/silence32.png",
+		  "48": "images/silence64.png",
+		  "128": "images/silence128.png"           
+	  },
+	  "default_popup": "popup.html"       
+  },
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+  },
+  "manifest_version": 2
+}

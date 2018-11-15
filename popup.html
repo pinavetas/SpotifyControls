@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Spotify Controls</title>	
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">	
+		<link href="css/toggle-switch.css" rel="stylesheet">	
+		<link href="css/onoffswitch.css" rel="stylesheet">
+		<link href="css/spotify-controls.css" rel="stylesheet">	
+	</head>
+	<body>
+		<div class="spotify-popup" style="width: 120px;">
+			<h6 class="w3-center w3-opacity">Controls</h6>	
+			<div class="w3-container">
+				<div class=" w3-show-inline-block" style="width:100%;">
+					<div class="w3-bar w3-center">
+						<a id="backButton"><img src="images/back.png" style="cursor: pointer;"></a>
+						<a class="hide" id="pauseButton"><img src="images/pause.png" style="cursor: pointer;"></a>
+						<a id="playButton"><img src="images/play-button.png" style="cursor: pointer;"></a>
+						<a id="forwardButton"><img src="images/next.png" style="cursor: pointer;"></a>
+					</div>
+				</div>
+			</div>	
+			<h6 class="w3-center w3-opacity">Auto Mute Adds</h6>	
+			<div class="onoffswitch center-switch">
+				<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="muteSwitch">
+				<label class="onoffswitch-label" for="muteSwitch">
+					<span class="onoffswitch-inner"></span>
+					<span class="onoffswitch-switch"></span>
+				</label>
+			</div>
+		</div>
+		<script src="popup.js"></script>
+	</body>
+</html>

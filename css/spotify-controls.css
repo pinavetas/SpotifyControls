@@ -1,0 +1,17 @@
+h5{font-size:16px;}
+h6{font-size:14px;}
+
+.hide{
+	display:none;
+}
+.show{
+	display:inline-block;
+}
+.spotify-popup a{
+    margin-right: 2px;
+}
+
+.center-switch{
+	margin:auto;
+	margin-bottom: 5px;
+}
