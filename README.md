@@ -5,6 +5,7 @@ A Chrome Extension to control Spotify on tab bar. This extensión gives play/pau
 	
 		- Control + Shift + 2: Pause Spotify
 		- Control + Shift + 3: Play Spotify
+		- Control + Shift + 4: Play next song
 
 	Those shortcuts work even when Chrome isn't focused.
 	

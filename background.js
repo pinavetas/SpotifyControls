@@ -74,6 +74,9 @@ chrome.commands.onCommand.addListener(function(command) {
 	}else if(command === 'spotify-resume-key'){
 		console.log("Command Play");
 		sendAction2Spotify("playPlayer");
+	}else if(command === 'spotify-forward-key'){
+		console.log("Command Forward");
+		sendAction2Spotify("forwardPlayer");
 	}
 });
 

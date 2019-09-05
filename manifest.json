@@ -1,6 +1,6 @@
 {
   "name": "Spotify Controls",
-  "version": "0.0.0.1",
+  "version": "0.0.0.2",
   "description": "Extension to control Spotify player on Extension tab",
   "permissions": ["storage", "tabs"],
   "minimum_chrome_version": "55",
@@ -23,6 +23,13 @@
           "default": "Ctrl+Shift+3"
         },
         "description": "Spotify resume command",
+        "global": true
+      },
+	  "spotify-forward-key": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+4"
+        },
+        "description": "Spotify forward command",
         "global": true
       }
   },
